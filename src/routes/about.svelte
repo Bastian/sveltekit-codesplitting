@@ -14,12 +14,20 @@
 	export const prerender = true;
 </script>
 
+<script>
+	import moment from 'moment';
+
+	const time = moment().format();
+</script>
+
 <svelte:head>
 	<title>About</title>
 </svelte:head>
 
 <div class="content">
 	<h1>About this app</h1>
+
+	<p>It's {time}</p>
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
